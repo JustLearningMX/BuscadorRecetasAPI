@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetarium</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/random.css">
+    <link rel="stylesheet" href="css/acercade.css">
+
+    <!-- Boton tipo hamburguesa -->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="./js/menu.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <a href="#" id="logo-header">
+                <img src="https://www.themealdb.com/images/logo-small.png" alt="logo-MealDb">
+            </a>
+
+            <!-- Boton tipo hamburguesa -->
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="menu">
+                <li id="menu-items" class="selected"><a href="#search-food" class="nav-link select">Buscar</a></li>
+                <li id="menu-items"><a href="#random-food" class="nav-link">Aleatorio</a></li>
+                <li id="menu-items"><a href="#about" class="nav-link">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search-food" class="search-food_container">
+        <div class="search-food_find">
+            <label class="search-label" for="search-item">¿Hambriento?</label>
+            <input class="input-search" id="search-item" type="text" placeholder="¡Encuentra tu comida!">
+            <button id="submit-btn" type="submit" class="submit-button">¡Encontrar!</button>
+        </div>
+        <div class="search-food_showMeal">
+            <h1>Aquí mostrará los resultados de la búsqueda</h1>
+        </div>
+    </section>
+
+    <section id="random-food" class="random-food_container">
+        <div class="random-food_find">
+            <label class="random-label">¡Déjaselo al destino!</label>
+            <button id="random-btn" type="submit" class="random-button">¡Búsqueda Aleatoria!</button>
+        </div>
+        <div class="random-food_showMeal">
+            <h2 class="titulo_random">¡Comida random!</h2>
+            <img src="" alt="" class="img-random">
+            <h5 class="ingredientes">Ingredientes:</h5>
+            <div class="random-food_slider"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-container">
+        <div>
+            <h1 id="h1_">Equipo conformado por:</h1>
+            <p id="p_">Erick Carranza Meza</p>
+            <p id="p_">Justine Delgado</p>
+            <p id="p_">David Rivera Orozco</p>
+            <p id="p_">Jesús Salvador Uribe</p>
+            <p id="p_">Hiram Chávez López</p>
+          </div>
+    </section>
+</body>
+
+</html>

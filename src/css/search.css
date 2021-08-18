@@ -1,0 +1,47 @@
+#search-food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.search-food_find{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-food_find > label,
+.random-food_find > label {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+
+.search-food_find > input{
+    margin: 0 0 15px 0;
+    height: 40px;
+    width: 250px;
+    border-radius: 0.25rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.search-food_find > button {
+    margin-bottom: 30px;
+    display: block;
+    width: 250px;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.search-food_showMeal{
+    display: none;
+}
